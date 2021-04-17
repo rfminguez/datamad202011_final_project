@@ -1,0 +1,33 @@
+--------
+20210417
+--------
+
+TUTORÍA: Siguientes pasos según los puntos que me ha comentado David.
+
+* Probar a eliminar outliers
+	Esta librería Python está preparada para esto.
+		https://pyod.readthedocs.io/en/latest/
+
+* Probar otros encoder (ordinal encoder) para ver si mejora la predicción.
+
+----------
+IMPORTANTE:
+----------
+* Calcular el AUC a nivel de clase (en los labels del TARGET hay más de dos clases para clasificar). 
+
+Va a ser la métrica más adecuada para un problema de este tipo. El que uso ahora, Acuracy, no es el mejor.
+Porque hay un desbalanceo grande entre clases de TARGET:
+Métricas de validación para multiclass:
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#plot-roc-curves-for-the-multilabel-problem
+https://www.scikit-yb.org/en/latest/api/classifier/rocauc.html
+
+
+* Ver la curva ROC de cada clase (del TARGET) y AUC.
+	Ver tasa de falsos positivos vs falsos negativos.
+	Par aplicar el proyecto, estos temas son muy importantes 
+	(¿voy a tener muchos falsos positivos y voy a tirar clientes potenciales? ¿me merece la pena correr ese riesgo? 
+	la lucha entre seguridad vs usabilidad, al final).
+
+
+* Optimización de Hiperparámetros
+
