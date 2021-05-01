@@ -9,10 +9,10 @@ Se trata de un problema de clasificación multilabel usando Machine Learning sup
 ## ***Status***
 Actualmente es una prueba de concepto cuyo objetivo es evaluar académicamente la posibilidad de aplicar técnicas de Machine Learning en el área de ciberseguridad.
 
-## ***Technology stack**
+## ***Technology stack***
 Utilizo Python como lenguaje de programación y el análisis lo desarrollo en un *Jupyter notebook* ([main.ipynb](./main.ipynb)).
 
-Además se utilizan las librerías:
+Estas son las librerías principales que uso:
 - numpy
 - pandas
 - sklearn
